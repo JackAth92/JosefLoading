@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="JosefLoading">
+        <attr name="moveOnAxisX" format="boolean" />
+        <attr name="moveOnAxisY" format="boolean" />
+        <attr name="stiffness" format="enum">
+            <enum name="high" value="1" />
+            <enum name="medium" value="2" />
+            <enum name="low" value="3" />
+            <enum name="very_low" value="4" />
+        </attr>
+        <attr name="damping_ratio" format="enum">
+            <enum name="high" value="1" />
+            <enum name="medium" value="2" />
+            <enum name="low" value="3" />
+            <enum name="no_bounce" value="4" />
+        </attr>
+        <attr name="animation_duration" format="integer" />
+        <attr name="final_position" format="float" />
+    </declare-styleable>
+</resources>
