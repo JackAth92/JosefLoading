@@ -116,12 +116,14 @@ public class JosefLoading extends ProgressBar {
                         if (moveOnAxisY) {
                             dY = v.getY() - event.getRawY();
                             springAnimationY.cancel();
+
                         }
                         break;
                     case MotionEvent.ACTION_MOVE:
                         if (moveOnAxisY) {
                             v.animate().y(event.getRawY() + dY);
-                        } else if (moveOnAxisX) {
+                        }
+                        if (moveOnAxisX) {
                             v.animate().x(event.getRawX() + dX);
                         }
                         v.animate().setDuration(animationDuration).start();
